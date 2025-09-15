@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rhythmic Tunes – Your Melodic Companion</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Rhythmic Tunes</h1>
+        <p>Your Melodic Companion</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#playlist">Playlist</a></li>
+            <li><a href="#favorites">Favorites</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <section id="search-bar">
+        <input type="text" id="search-input" placeholder="Search songs..." onkeyup="searchSongs()" />
+    </section>
+
+    <section id="playlist">
+        <h2>Playlist</h2>
+        <div class="songs" id="songs-list">
+            <!-- Song cards -->
+            <div class="song-card" data-title="Dreamscape">
+                <img src="images/Dreamscape.jpg" alt="Dreamscape">
+                <h3>Dreamscape</h3>
+                <audio controls>
+                    <source src="song/Good-Times-chosic.com_.mp3" type="audio/mpeg">
+                </audio>
+                <button onclick="addToFavorites('Dreamscape', 'images/song1.jpg', 'songs/song1.mp3')">Add to Favorites</button>
+            </div>
+
+            <div class="song-card" data-title="Ocean Breeze">
+                <img src="images/Ocean Breeze.jpg" alt="Ocean Breeze">
+                <h3>Ocean Breeze</h3>
+                <audio controls>
+                    <source src="song/Penumbra-chosic.com_.mp3" type="audio/mpeg">
+                </audio>
+                <button onclick="addToFavorites('Ocean Breeze', 'images/song2.jpg', 'songs/song2.mp3')">Add to Favorites</button>
+            </div>
+
+            <div class="song-card" data-title="Mountain Echoes">
+                <img src="images/Mountain Echoes.jpg" alt="Mountain Echoes">
+                <h3>Mountain Echoes</h3>
+                <audio controls>
+                    <source src="song/PeriTune_Sugar_Sprinkle-chosic.com_.mp3" type="audio/mpeg">
+                </audio>
+                <button onclick="addToFavorites('Mountain Echoes', 'images/song3.jpg', 'songs/song3.mp3')">Add to Favorites</button>
+            </div>
+
+            <div class="song-card" data-title="City Lights">
+                <img src="images/City Lights.jpg" alt="City Lights">
+                <h3>City Lights</h3>
+                <audio controls>
+                    <source src="song/scott-buckley-reverie(chosic.com).mp3" type="audio/mpeg">
+                </audio>
+                <button onclick="addToFavorites('City Lights', 'images/song4.jpg', 'songs/song4.mp3')">Add to Favorites</button>
+            </div>
+
+            <div class="song-card" data-title="Forest Whispers">
+                <img src="images/Forest Whispers.jpg" alt="Forest Whispers">
+                <h3>Forest Whispers</h3>
+                <audio controls>
+                    <source src="song/Sweet(chosic.com).mp3" type="audio/mpeg">
+                </audio>
+                <button onclick="addToFavorites('Forest Whispers', 'images/song5.jpg', 'songs/song5.mp3')">Add to Favorites</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="favorites">
+        <h2>Your Favorites</h2>
+        <div id="favorites-list">
+            <p>No favorites yet.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Rhythmic Tunes</h2>
+        <p>Explore melodies with images, create playlists, add your favorite songs, and easily search through them. Enjoy music your way!</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
